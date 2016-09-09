@@ -1,0 +1,280 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+ul, ol {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+
+
+nav ul {
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 8%;
+	padding: 10px 0px;
+}
+
+nav ul li a {
+	color: white;
+	font-family: "Ubuntu";
+	font-weight: 100;
+}
+
+nav ul li:first-child {
+	font-size: 3.5vh!important;
+	font-weight: 100!important;
+}
+/***********end of header*************/
+/*************carousel****************/
+
+.owl-carousel .item-text-above h1 {
+	text-align: center;
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 8vh;
+	color: #333;
+	margin-top: 50px;
+}
+
+.owl-carousel .item-text-above h2 {
+	text-align: center;
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 5vh;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.owl-carousel .item img{
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.owl-carousel #watch-item-img {
+	width: 60%;
+}
+
+.owl-carousel #macbook-item-img {
+	width: 60%;
+}
+
+.owl-carousel #tv-item-img {
+	width: 60%;
+	position: relative;
+	top: -20px;
+}
+
+#tv-text {
+	position: relative;
+	top: -120px;
+	text-align: center;
+}
+
+#tv-text i {
+	color: #333;
+	font-size: 8vh;
+}
+
+#tv-text h1 {
+	display: inline-block;
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 8vh;
+	color: #333;
+}
+
+#tv-text h2 {
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 5vh;
+	color: #333;
+	margin-bottom: 0px;
+}
+
+/************end of carousel*************/
+
+/************section promos**************/
+
+.promos ul {
+	text-align: center;
+	width: 100%;
+}
+
+.promos ul li {
+	display: inline-block;
+	width: 24.7%;
+	height: 200px;
+}
+
+#promos1 {
+	background-image: url(../images/frank_ocean_medium.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 640px 200px;
+}
+
+#promos2 {
+	background-image: url(../images/diversity_divya_medium.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 640px 200px;
+}
+
+#promos3 {
+	background-image: url(../images/swift_playground_medium.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 640px 200px;
+}
+
+#promos4 {
+	background-image: url(../images/bts_lastchance_medium.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 640px 200px;
+}
+
+.red-cross ul {
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.red-cross ul li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px 15px;
+	font-family: "Open Sans";
+	font-weight: 500;
+
+}
+
+.red-cross ul li:first-child {
+	border-right: 1px solid lightgray;
+	padding-left: 30px;
+}
+
+.red-cross ul li:last-child {
+	padding-left: 0px;
+}
+
+.red-cross img {
+	padding-top: 7px;
+}
+
+.red-cross i {
+	font-size: 15px!important;
+}
+/**********end of section promos********/
+
+/*****************footer****************/
+
+footer {
+	background-color: #f2f2f2;
+	font-family: "Ubuntu";
+	margin-top: 10px;
+	padding: 30px 0px;
+}
+
+#lists {
+	width: 80%;
+	margin: auto;
+}
+
+#lists ul {
+	width: 19%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#lists ul li a {
+	font-size: 1.9vh;
+	color: #666;
+}
+
+#lists ul li p {
+	font-size: 2vh;
+	color: black;
+	font-weight: 400;
+	padding-bottom: 5px;
+}
+
+hr {
+	margin: 10px 0px;
+}
+
+#copyright {
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#copyright p {
+	color: #999;
+}
+
+#copyright a, #copyright p {
+	font-family: "Ubuntu";
+	font-size: 1.9vh;
+}
+
+#visit-store a {
+	color: blue;
+}
+
+#visit-store a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#copy, #copy-list a {
+	float: left;
+	padding-top: 3px;
+}
+
+#copy-list a {
+	padding: 3px 15px;
+	border-right: 1px solid lightgray;
+	color: #666;
+}
+
+#copy-list a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#copy-list span a {
+	border: none;
+}
+
+#flag {
+	float: right;
+}
+
+#flag a {
+	color: #666;
+}
+
+#flag a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+/************end of footer*************/

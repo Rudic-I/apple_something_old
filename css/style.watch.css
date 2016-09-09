@@ -1,0 +1,814 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+ul, ol {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+
+
+/*************header**************/
+
+/***********start nav1************/
+
+#nav1 {
+	position: relative;
+	z-index: 200;
+}
+
+#nav1 ul {
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+
+#nav1 ul li {
+	display: inline-block;
+	width: 8%;
+	padding: 10px 0px;
+}
+
+#nav1 ul li a {
+	color: white;
+	font-family: "Ubuntu";
+	font-weight: 100;
+}
+
+#nav1 ul li:first-child {
+	font-size: 3.5vh!important;
+	font-weight: 100!important;
+}
+
+/************end nav1*************/
+
+/***********start nav2************/
+
+#nav2 {
+	position: relative;
+	z-index: 200;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.nav2-sticky {
+	position: fixed!important;
+	top: 0;
+	width: 100%;
+}
+
+#nav2-wrap {
+	width: 77%;
+	margin: auto;
+	height: 40px;
+	font-family: "Ubuntu";
+	
+}
+
+#nav2-wrap i {
+	width: 10%;
+	display: inline-block;
+	text-align: center;
+	padding: 2px 0px;
+	margin: 7px 0px;
+	font-size: 3.5vh;
+	color: black;
+}
+
+#nav2 i span {
+	font-family: "Ubuntu";
+}
+
+#nav2-wrap ul {
+	width: 80%;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+#nav2 ul li {
+	display: inline-block;
+	padding: 2px 12px;
+	margin: 7px 5px 7px 0px;
+}
+
+#nav2 ul li a {
+	color: #666;
+}
+
+#nav2-last-child {
+	border: 1px solid #666;
+	border-radius: 10%;
+	background: #2189db;
+}
+
+#nav2-last-child a {
+	color: white!important;
+}
+
+/**********section-hero************/
+
+#section-hero {
+	background-color: #f2f2f2;
+	position: relative;
+	height: 900px;
+}
+
+.at-glance {
+	width: 30%;
+	margin: 0px 0px 0px 120px;
+	font-family: "Open Sans";
+}
+
+.at-glance h1 {
+	padding-top: 50px;
+	font-size: 8vh;
+	font-weight: 100!important;
+	color: #666;
+}
+
+.at-glance p {
+	line-height: 1.7;
+	padding-top: 20px;
+	color: #666
+}
+
+.at-glance p a {
+	color: #333;
+	font-weight: bold;
+}
+
+.watch1 {
+	width: 317px;
+	height: 341px;
+	background: url(../images/watch_01_large.jpg);
+	mask-image: url(../images/watch_01_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_01_mask_large.svg);
+	background-size: 317px 341px;
+	position: absolute;
+	top:-15%;
+	left: 75%;
+	z-index: 100;
+}
+
+.watch2 {
+	width: 401px;
+	height: 336px;
+	background: url(../images/watch_02_large.jpg);
+	mask-image: url(../images/watch_02_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_02_mask_large.svg);
+	background-size: 401px 336px;
+	position: absolute;
+	top: 15%;
+	left: 45%;
+}
+
+.watch3 {
+	width: 519px;
+	height: 476px;
+	background: url(../images/watch_03_large.jpg);
+	mask-image: url(../images/watch_03_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_03_mask_large.svg);
+	background-size: 519px 476px;
+	position: absolute;
+	top: 50%;
+	left: 60%;
+}
+
+.watch-anime {
+	animation-name: watch-anime;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	animation-delay: 0.2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-fill-mode: both;
+    animation-play-state: initial;
+}
+
+@keyframes watch-anime {
+	0% {
+		opacity: 0;
+		transform: translateY(61.5941px) rotate(-7.97364deg);
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		transform: none;
+	}
+}
+
+/**************end section hero**************/
+
+/***********section notifications************/
+
+#skip {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: -webkit-linear-gradient(#f2f2f2, #f9e5e0);
+    background: -o-linear-gradient(#f2f2f2, #f9e5e0);
+    background: -moz-linear-gradient(#f2f2f2, #f9e5e0);
+    background: linear-gradient(#f2f2f2, #f9e5e0);
+}
+
+#notifications-wrap {
+	position: relative;
+	width: 100%;
+	height: 900px;
+	background-color: #f9e5e0;
+}
+
+.notifications {
+	width: 30%;
+	margin: 0px 0px 0px 120px;
+	font-family: "Open Sans";
+}
+
+.notifications h1 .above-title {
+	font-size: 4vh;
+	font-weight: 100!important;
+	color: #666;
+}
+
+.notifications h1 .title {
+	padding-top: 50px;
+	font-size: 8vh;
+	font-weight: 100!important;
+	color: #666;
+}
+
+.notifications p {
+	line-height: 1.7;
+	padding-top: 20px;
+	color: #666
+}
+
+.notifications p a {
+	color: #333;
+	font-weight: bold;
+}
+
+.watch4 {
+	width: 364px;
+	height: 314px;
+	background: url(../images/watch_04_large.jpg);
+	mask-image: url(../images/watch_04_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_04_mask_large.svg);
+	background-size: 364px 314px;
+	position: absolute;
+	top:-30%;
+	left: 70%;
+	z-index: 100;
+}
+
+.watch5 {
+	width: 445px;
+	height: 478px;
+	background: url(../images/watch_05_large.jpg);
+	mask-image: url(../images/watch_05_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_05_mask_large.svg);
+	background-size: 445px 478px;
+	position: absolute;
+	top: -20%;
+	left: 40%;
+}
+
+.watch6 {
+	width: 688px;
+	height: 778px;
+	background: url(../images/watch_06.jpg);
+	mask-image: url(../images/watch_06_mask.svg);
+	-webkit-mask-image:url(../images/watch_06_mask.svg);
+	background-size: 688px 778px;
+}
+
+#watch6-wrap {
+	width: 580px;
+	height: 778px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: absolute;
+	top: 30%;
+	left: 55%;
+}
+
+/*********end section notifications**********/
+
+/***********section personalization**********/
+
+#skip2 {
+	width: 100%;
+	height: 300px;
+	background: -webkit-linear-gradient(#f9e5e0, #f9f1fa);
+    background: -o-linear-gradient(#f9e5e0, #f9f1fa);
+    background: -moz-linear-gradient(#f9e5e0, #f9f1fa);
+    background: linear-gradient(#f9e5e0, #f9f1fa);
+}
+
+#personalization-wrap {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	background-color: #f9f1fa;
+}
+
+.personalization {
+	width: 30%;
+	margin: 0px 0px 0px 120px;
+	font-family: "Open Sans";
+}
+
+.personalization h1 .above-title {
+	font-size: 4vh;
+	font-weight: 100!important;
+	color: #666;
+}
+
+.personalization h1 .title {
+	padding-top: 50px;
+	font-size: 8vh;
+	font-weight: 100!important;
+	color: #666;
+}
+
+.personalization p {
+	line-height: 1.7;
+	padding-top: 20px;
+	color: #666
+}
+
+.personalization p a {
+	color: #333;
+	font-weight: bold;
+}
+
+.watch10 {
+	width: 461px;
+	height: 402px;
+	background: url(../images/watch_10_large.jpg);
+	mask-image: url(../images/watch_10_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_10_mask_large.svg);
+	background-size: 461px 402px;
+	position: absolute;
+	top:-40%;
+	left: 30%;
+	z-index: 100;
+}
+
+.watch11 {
+	width: 466px;
+	height: 344px;
+	background: url(../images/watch_11_large.jpg);
+	mask-image: url(../images/watch_11_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_11_mask_large.svg);
+	background-size: 466px 344px;
+	position: absolute;
+	top: -18%;
+	left: 65%;
+}
+
+.watch12 {
+	width: 570px;
+	height: 760px;
+	background: url(../images/watch_12_large.jpg);
+	mask-image: url(../images/watch_12_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_12_mask_large.svg);
+	background-size: 570px 760px;
+	position: absolute;
+	top: 8%;
+	left: 40%;
+}
+
+.watch13 {
+	width: 454px;
+	height: 454px;
+	background: url(../images/watch_13_large.jpg);
+	mask-image: url(../images/watch_13_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_13_mask_large.svg);
+	background-size: 454px 454px;
+	position: absolute;
+	top: 58%;
+	left: 22%;
+}
+
+#watch14-wrap {
+	width: 152px;
+	height: 377px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: absolute;
+	top: 50%;
+	left: 88%;
+}
+
+.watch14 {
+	width: 352px;
+	height: 377px;
+	background: url(../images/watch_14_large.jpg);
+	mask-image: url(../images/watch_14_mask_large.svg);
+	-webkit-mask-image:url(../images/watch_14_mask_large.svg);
+	background-size: 352px 377px;
+	/*position: absolute;
+	top: 50%;
+	left: 90%;*/
+}
+
+/********end section personalization*******/
+
+/**************section preview*************/
+
+#preview {
+	width: 90%;
+	height: 700px;
+	margin: 10px auto;
+	background-image: url(../images/watch_os_banner_large.jpg);
+	text-align: center;
+	position: relative;
+}
+
+#preview-content {
+	position: absolute;
+	bottom: 10%;
+	left: 42%;
+}
+
+#preview-content h2 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 4.8vh;
+	color: #666;
+}
+
+#preview-content p {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+	padding: 5px 0px;
+}
+
+#preview-content p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+}
+
+
+
+/***********end section preview**********/
+
+/***********section watch-bands**********/
+
+#watch-bands {
+	width: 90%;
+	height: 600px;
+	margin: auto;
+}
+
+#watch-bands-left-wrap {
+	float: left;
+	width: 48%;
+	height: 600px;
+	background: url(../images/bands_large.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#watch-bands-left-content {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+}
+
+#watch-bands-left-content h2 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 4.8vh;
+	color: #666;
+}
+
+#watch-bands-left-content p {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+	padding: 5px 0px;
+}
+
+#watch-bands-left-content p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+}
+
+#watch-bands-right-content {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+}
+
+#watch-bands-right-wrap {
+	float: right;
+	width: 48%;
+	height: 600px;
+	background-image: url(../images/hermes_large.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+}
+
+#watch-bands-right-content p span {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	font-size: 3.5vh;
+	color: black;
+}
+
+#watch-bands-right-content p i {
+	font-size: 3.5vh;
+	color: black;
+}
+
+#watch-bands-right-content p {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+	padding: 5px 0px;
+}
+
+#watch-bands-right-content p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #666;
+}
+
+/*********end section watch-bands********/
+
+/**************section films*************/
+
+#films {
+	width: 90%;
+	margin: 10px auto;
+	height: 720px;
+	background: url(../images/films_bg_large.png);
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+#films-image {
+	margin: 20px 0px;
+	width: 100%;
+	height: 720px;
+	background-image: url(../images/films_large.jpg);
+	background-repeat: no-repeat;
+	background-size: 480px 720px;
+	background-position: center top;
+}
+
+#films span {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+
+#films h2 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 4.8vh;
+	color: white;
+}
+
+#films p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: white;
+}
+
+/************end section films***********/
+
+/***********section accessories**********/
+
+#accessories {
+	width: 90%;
+	margin: auto;
+}
+
+.accessories-content {
+	width: 48%;
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+}
+
+#accessories span {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+}
+
+#accessories-left {
+	width: 48%;
+	height: 600px;
+	float: left;
+	position: relative;
+	background-color: #eeeeee;
+	background-image: url(../images/accessories_large.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#accessories-left h2 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 4.8vh;
+	color: #333;
+}
+
+#accessories-left p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: #333;
+}
+
+#accessories-right {
+	width: 48%;
+	height: 600px;
+	float: right;
+	position: relative;
+	background-image: url(../images/store_large.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#accessories-right h2 {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 4.8vh;
+	color: white;
+}
+
+#accessories-right p a {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 2.1vh;
+	color: white;
+}
+
+/*********end section accessories********/
+
+/*****************footer****************/
+
+footer {
+	background-color: #f2f2f2;
+	font-family: "Ubuntu";
+	margin-top: 10px;
+	padding: 30px 0px;
+}
+
+#buy-apple {
+	width: 80%;
+	margin: auto;
+}
+
+#buy-apple ul {
+	text-align: center;
+}
+
+#buy-apple ul li {
+	display: inline-block;
+	margin: auto;
+	width: 23%;
+	text-align: center;
+	vertical-align: top;
+}
+
+#buy-apple ul li h3 {
+	font-family: "Open Sans";
+	color: #333;
+	font-size: 3.2vh;
+	font-weight: 300;
+}
+
+#buy-apple ul li p {
+	color: #666;
+	font-size: 1.9vh;
+	padding: 5px 0px;
+}
+
+#buy-apple ul li p a {
+	font-family: "Ubuntu";
+	font-size: 1.9vh;
+	color: blue;
+}
+
+#buy-apple ul li p a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#lists {
+	width: 80%;
+	margin: auto;
+}
+
+#lists p {
+	font-size: 1.6vh;
+	color: #999;
+}
+
+#lists ul {
+	width: 19%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#lists ul li a {
+	font-size: 1.9vh;
+	color: #666;
+}
+
+#lists ul li p {
+	font-size: 2vh;
+	color: black;
+	font-weight: 400;
+	padding-bottom: 5px;
+}
+
+hr {
+	margin: 10px 0px;
+}
+
+#copyright {
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#copyright p {
+	color: #999;
+}
+
+#copyright a, #copyright p {
+	font-family: "Ubuntu";
+	font-size: 1.9vh;
+}
+
+#visit-store a {
+	color: blue;
+}
+
+#visit-store a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#copy, #copy-list a {
+	float: left;
+	padding-top: 3px;
+}
+
+#copy-list a {
+	padding: 3px 15px;
+	border-right: 1px solid lightgray;
+	color: #666;
+}
+
+#copy-list a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#copy-list span a {
+	border: none;
+}
+
+#flag {
+	float: right;
+}
+
+#flag a {
+	color: #666;
+}
+
+#flag a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+/************end of footer*************/
